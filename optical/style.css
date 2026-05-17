@@ -1,0 +1,315 @@
+/* Base Variables & Reset */
+:root {
+    --primary-color: #0a2540;
+    --secondary-color: #ffcc00;
+    --text-light: #ffffff;
+    --text-dark: #333333;
+    --bg-light: #f8f9fa;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: var(--text-dark);
+    overflow-x: hidden;
+}
+
+/* Header Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+
+.logo p {
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #777;
+    margin-top: -4px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+    font-size: 14px;
+    transition: var(--transition);
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+.nav-links .sale-link {
+    color: #ff3333;
+    font-weight: 700;
+}
+
+.header-icons {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.icon-btn {
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.icon-btn:hover {
+    color: var(--primary-color);
+    transform: scale(1.1);
+}
+
+/* Hero Slider Section */
+.hero-slider {
+    position: relative;
+    height: 480px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    z-index: 1;
+}
+
+.slide.active {
+    opacity: 1;
+    z-index: 2;
+}
+
+.slide-content {
+    max-width: 50%;
+    color: var(--text-light);
+}
+
+.badge {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 5px 12px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.slide-content h2 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.slide-content .highlight {
+    color: var(--secondary-color);
+}
+
+.slide-content p {
+    font-size: 16px;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 25px;
+    transition: var(--transition);
+}
+
+.cta-btn:hover {
+    background-color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Slide Right Side Features Grid */
+.slide-features {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 35%;
+    color: var(--text-light);
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.feature-item i {
+    color: var(--secondary-color);
+    font-size: 18px;
+}
+
+/* Slider Controls */
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+.slider-btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.prev-btn {
+    left: 20px;
+}
+
+.next-btn {
+    right: 20px;
+}
+
+.slider-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: var(--secondary-color);
+    width: 25px;
+    border-radius: 5px;
+}
+
+/* Categories Section */
+.categories-section {
+    padding: 60px 5%;
+    text-align: center;
+    background-color: var(--bg-light);
+}
+
+.categories-section h3 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.category-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.category-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.category-card h4 {
+    padding: 20px;
+    font-size: 18px;
+    color: var(--primary-color);
+}
+
+/* Floating Help Button */
+.help-floating-btn {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+    cursor: pointer;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.help-floating-btn:hover {
+    background-color: #0056b3;
+}
