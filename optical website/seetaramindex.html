@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seetaram Eye Care & Optical - Premium Eyewear & Clinic, Ayodhya</title>
+    <meta name="description"
+        content="Welcome to Seetaram Eye Care & Optical Ayodhya. Authorized dealer for Ray-Ban, Oakley, Zeiss & Essilor. Schedule a free eye testing and explore premium glasses.">
+
+    <!-- Premium Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Lucide Icons script -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <div class="container"
+            style="display: flex; justify-content: space-between; align-items: center; padding: 0 16px;">
+            <div>✨ Celebrating over 25 years of precision eye care in <span>Ayodhya</span></div>
+            <div style="display: flex; gap: 20px;">
+                <span style="display: inline-flex; align-items: center; gap: 6px; cursor: pointer;">
+                    <i data-lucide="map-pin" style="width: 14px; height: 14px;"></i> Locate Store
+                </span>
+                <span style="display: inline-flex; align-items: center; gap: 6px;">
+                    <i data-lucide="phone" style="width: 14px; height: 14px;"></i> Help: +91-9450000000
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="nav-container">
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <div class="logo-icon">S</div>
+                <div class="logo-text">
+                    <span class="logo-title">SEETARAM</span>
+                    <span class="logo-sub">Eye Care & Optical</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li class="nav-item active"><a href="#" class="nav-link" data-view="home">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" data-view="catalog">Eyewear Catalog</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" data-view="clinic">Eye Clinic</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" data-view="stylefinder">Style Finder</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" data-view="billing">Online Billing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" data-view="about">Our Story</a></li>
+            </ul>
+
+            <!-- Nav Actions -->
+            <div class="nav-actions">
+                <button class="icon-btn"
+                    onclick="resetFilters(); document.querySelector('.nav-link[data-view=\'catalog\']').click();"
+                    title="Search Eyewear">
+                    <i data-lucide="search" style="width: 20px; height: 20px;"></i>
+                </button>
+                <button class="icon-btn" onclick="alert('Wishlist is empty (Demo System)')" title="Wishlist">
+                    <i data-lucide="heart" style="width: 20px; height: 20px;"></i>
+                </button>
+                <button class="icon-btn" onclick="document.querySelector('.nav-link[data-view=\'clinic\']').click()"
+                    title="Book Appointment"
+                    style="background: rgba(212, 175, 55, 0.1); color: var(--accent); border-radius: 20px; padding: 8px 16px; border: 1px solid rgba(212, 175, 55, 0.2);">
+                    <span
+                        style="font-size: 0.85rem; font-weight: 600; display: inline-flex; align-items: center; gap: 6px;">
+                        <i data-lucide="calendar" style="width: 14px; height: 14px;"></i> Book Appointment
+                    </span>
+                </button>
+
+                <!-- Mobile Toggle Button -->
+                <button class="icon-btn menu-toggle" id="menuToggle">
+                    <i data-lucide="menu" style="width: 24px; height: 24px;"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== HOME VIEW ==================== -->
+    <main id="home" class="page-view active">
+        <!-- Hero Section -->
+        <section class="hero" style="padding: 0;">
+            <div class="hero-slider">
+                <!-- Slide 1 -->
+                <div class="slide active">
+                    <div class="slide-content">
+                        <span class="slide-tag">Authorized ZEISS Partner</span>
+                        <h1 class="slide-title serif">Precision Vision meets Couture Style</h1>
+                        <p class="slide-desc">Experience state-of-the-art eye examinations and explore our curated
+                            collections of
+                            global luxury eyewear in the heart of Ayodhya.</p>
+                        <div style="display: flex; gap: 16px;">
+                            <a href="#" class="btn btn-primary"
+                                onclick="document.querySelector('.nav-link[data-view=\'catalog\']').click()">Explore
+                                Collections</a>
+                            <a href="#" class="btn btn-secondary"
+                                onclick="document.querySelector('.nav-link[data-view=\'clinic\']').click()">Book Free
+                                Vision Check</a>
+                        </div>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?auto=format&fit=crop&q=80&w=800"
+                        alt="Premium Eyewear Display" class="slide-img">
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <div class="slide-content">
+                        <span class="slide-tag">Ray-Ban & Oakley Authorized</span>
+                        <h1 class="slide-title serif">Exclusive Sunglasses Collection</h1>
+                        <p class="slide-desc">Protect your eyes in absolute luxury. Get flat 15% off on polarized
+                            sunglasses from
+                            leading international designers.</p>
+                        <div style="display: flex; gap: 16px;">
+                            <a href="#" class="btn btn-primary"
+                                onclick="const link = document.querySelector('.nav-link[data-view=\'catalog\']'); link.setAttribute('data-category', 'sunglasses'); link.click();">Shop
+                                Sunglasses</a>
+                            <a href="#" class="btn btn-secondary"
+                                onclick="document.querySelector('.nav-link[data-view=\'stylefinder\']').click()">Find
+                                Your Frame
+                                Shape</a>
+                        </div>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&q=80&w=800"
+                        alt="Designer Sunglasses" class="slide-img">
+                </div>
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <div class="slide-content">
+                        <span class="slide-tag">Advanced Contact Lens Center</span>
+                        <h1 class="slide-title serif">Comfort & Ultimate Clarity</h1>
+                        <p class="slide-desc">Discover the premium range of daily and monthly contact lenses from
+                            Acuvue, Alcon and
+                            Biofinity. Perfect fitting guaranteed.</p>
+                        <div style="display: flex; gap: 16px;">
+                            <a href="#" class="btn btn-primary"
+                                onclick="const link = document.querySelector('.nav-link[data-view=\'catalog\']'); link.setAttribute('data-category', 'contact-lenses'); link.click();">Explore
+                                Lenses</a>
+                            <a href="#" class="btn btn-secondary"
+                                onclick="document.querySelector('.nav-link[data-view=\'clinic\']').click()">Book Lens
+                                Fitting</a>
+                        </div>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&q=80&w=800"
+                        alt="Premium Lenses" class="slide-img">
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <div class="hero-controls">
+                <button class="control-btn" id="prevSlide" aria-label="Previous Slide">
+                    <i data-lucide="chevron-left" style="width: 20px; height: 20px;"></i>
+                </button>
+                <button class="control-btn" id="nextSlide" aria-label="Next Slide">
+                    <i data-lucide="chevron-right" style="width: 20px; height: 20px;"></i>
+                </button>
+                <div class="slide-dots">
+                    <div class="dot active"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brands Carousel Section -->
+        <div class="brand-carousel-wrapper">
+            <div class="brand-track">
+                <!-- Will be filled dynamically by JavaScript -->
+            </div>
+        </div>
+
+        <!-- Category Showcase -->
+        <section>
+            <div class="container">
+                <div class="section-header">
+                    <span
+                        style="color: var(--accent); font-weight:600; letter-spacing: 2px; text-transform: uppercase; font-size: 0.85rem;">Curated
+                        Categories</span>
+                    <h2 class="serif">Shop Premium Eyewear</h2>
+                    <p>Find the perfect fit for your eyes, custom fitted with prescription lens technology.</p>
+                </div>
+                <div class="category-grid">
+                    <!-- Card 1 -->
+                    <div class="category-card" data-category-card="eyeglasses">
+                        <img src="https://images.unsplash.com/photo-1591076482161-42ce6da69f67?auto=format&fit=crop&q=80&w=600"
+                            alt="Eyeglasses Collection">
+                        <div class="category-overlay">
+                            <span class="category-subtitle">Precision Glasses</span>
+                            <h3 class="category-title">Eyeglasses</h3>
+                            <span class="category-link">Shop Collection <i data-lucide="arrow-right"
+                                    style="width: 16px; height: 16px;"></i></span>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="category-card" data-category-card="sunglasses">
+                        <img src="https://images.unsplash.com/photo-1577803645773-f96470509666?auto=format&fit=crop&q=80&w=600"
+                            alt="Sunglasses Collection">
+                        <div class="category-overlay">
+                            <span class="category-subtitle">UV Protection</span>
+                            <h3 class="category-title">Sunglasses</h3>
+                            <span class="category-link">Shop Designer <i data-lucide="arrow-right"
+                                    style="width: 16px; height: 16px;"></i></span>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="category-card" data-category-card="contact-lenses">
+                        <img src="https://images.unsplash.com/photo-1516214104703-d870798883c5?auto=format&fit=crop&q=80&w=600"
+                            alt="Contact Lenses Collection">
+                        <div class="category-overlay">
+                            <span class="category-subtitle">Daily & Monthly</span>
+                            <h3 class="category-title">Contact Lenses</h3>
+                            <span class="category-link">Explore Brands <i data-lucide="arrow-right"
+                                    style="width: 16px; height: 16px;"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Clinic Preview Section -->
+        <section class="clinic-highlights">
+            <div class="container">
+                <div class="clinic-flex">
+                    <div class="clinic-visual">
+                        <div class="clinic-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1579684389782-64d84b5e901a?auto=format&fit=crop&q=80&w=800"
+                                alt="State of the art clinic">
+                            <div class="clinic-badge glass-panel">
+                                <span class="clinic-badge-num">100%</span>
+                                <span class="clinic-badge-text">German testing Tech</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clinic-info">
+                        <span class="clinic-tag">Clinical Excellence</span>
+                        <h2 class="clinic-title serif">State-Of-The-Art Vision Center</h2>
+                        <p class="clinic-desc">Equipped with computerized testing suites and leading diagnostics,
+                            Seetaram Eye Care
+                            guarantees extreme accuracy for your vision prescriptions.</p>
+
+                        <div class="clinic-features">
+                            <div class="clinic-feature-item">
+                                <div class="clinic-feature-icon"><i data-lucide="shield-check"
+                                        style="width: 20px; height: 20px;"></i>
+                                </div>
+                                <div>
+                                    <h4 class="clinic-feature-title">Dr. Dimpal Yadav (Lead Optometrist)</h4>
+                                    <p class="clinic-feature-desc">Over 8 years of clinical expertise across leading eye
+                                        hospitals in
+                                        Delhi & Ayodhya.</p>
+                                </div>
+                            </div>
+                            <div class="clinic-feature-item">
+                                <div class="clinic-feature-icon"><i data-lucide="settings"
+                                        style="width: 20px; height: 20px;"></i></div>
+                                <div>
+                                    <h4 class="clinic-feature-title">Computerized Refraction</h4>
+                                    <p class="clinic-feature-desc">High-precision diagnostic equipment from ZEISS.</p>
+                                </div>
+                            </div>
+                            <div class="clinic-feature-item">
+                                <div class="clinic-feature-icon"><i data-lucide="eye"
+                                        style="width: 20px; height: 20px;"></i></div>
+                                <div>
+                                    <h4 class="clinic-feature-title">Contact Lens Clinic</h4>
+                                    <p class="clinic-feature-desc">Professional fitting and custom lens consultation.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="clinic-feature-item">
+                                <div class="clinic-feature-icon"><i data-lucide="sparkles"
+                                        style="width: 20px; height: 20px;"></i></div>
+                                <div>
+                                    <h4 class="clinic-feature-title">Frame Fitting System</h4>
+                                    <p class="clinic-feature-desc">We align frames precisely with your pupillary
+                                        distance (PD).</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="btn btn-primary"
+                            onclick="document.querySelector('.nav-link[data-view=\'clinic\']').click()">Book Clinical
+                            Consultation</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visit Showroom & Location Section -->
+        <section class="visit-showroom">
+            <div class="container">
+                <div class="section-header">
+                    <span
+                        style="color: var(--accent); font-weight:600; letter-spacing: 2px; text-transform: uppercase; font-size: 0.85rem;">Locate
+                        Us</span>
+                    <h2 class="serif">Visit Our Ayodhya Showroom</h2>
+                    <p>Experience optical excellence in person. Get your eyes checked by our certified optometrists and
+                        browse our wide range of premium frames.</p>
+                </div>
+                <div class="showroom-flex">
+                    <div class="showroom-image-box glass-panel">
+                        <img src="seetaram_shop.jpg" alt="Seetaram Eye Care & Optical Showroom Interior"
+                            class="showroom-img">
+                        <div class="showroom-details-overlay">
+                            <h4>Seetaram Eye Care & Optical</h4>
+                            <p style="margin: 8px 0; font-size: 0.95rem; color: var(--text-primary);"><i
+                                    data-lucide="map-pin"
+                                    style="width: 16px; height: 16px; display: inline-block; vertical-align: middle; margin-right: 5px; color: var(--accent);"></i>
+                                Main Market Road, Near Naya Ghat, Ayodhya, UP - 224123</p>
+                            <p style="margin: 8px 0; font-size: 0.95rem; color: var(--text-primary);"><i
+                                    data-lucide="phone"
+                                    style="width: 16px; height: 16px; display: inline-block; vertical-align: middle; margin-right: 5px; color: var(--accent);"></i>
+                                +91-9450000000 | +91-8115442777</p>
+                        </div>
+                    </div>
+                    <div class="showroom-map-box glass-panel">
+                        <iframe
+                            src="https://maps.google.com/maps?q=26.768433552136486,82.17319178291571&amp;z=17&amp;output=embed"
+                            width="100%" height="100%"
+                            style="border:0; min-height: 350px; display: block; border-radius: 12px;" allowfullscreen=""
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section>
+            <div class="container">
+                <div class="section-header">
+                    <span
+                        style="color: var(--accent); font-weight:600; letter-spacing: 2px; text-transform: uppercase; font-size: 0.85rem;">Patient
+                        Reviews</span>
+                    <h2 class="serif">Trusted by Generations</h2>
+                    <p>Read what our happy customers in Ayodhya have to say about our precise prescription matching and
+                        eyewear
+                        collection.</p>
+                </div>
+                <div class="testimonials-grid">
+                    <!-- Card 1 -->
+                    <div class="testimonial-card glass-panel">
+                        <span class="quote-icon">“</span>
+                        <div class="stars">
+                            <i data-lucide="star" style="width: 16px; height: 16px; fill: var(--accent);"></i>
+                            <i data-lucide="star" style="width: 16px; height: 16px; fill: var(--accent);"></i>
+                            <i data-lucide="star" style="width: 16px; height: 16px; fill: var(--accent);"></i>
+                            <i data-lucide="star" style="width: 16px; height: 16px; fill: var(--accent);"></i>
+                            <i data-lucide="star" style="width: 16px; height: 16px; fill: var(--accent);"></i>
+                        </div>
+                        <p class="testimonial-text">Seetaram Eye Care provided me with the most precise progressive
+                            glasses I have
+                            ever worn. Their testing facility is at par with the best clinics in Delhi, and the
+                            hospitality is
+                            top-notch.</p>
+                        <div class="testimonial-author">
+                            <span class="author-name">Dr. Ramesh Tripathi</span>
+                            <span class="author-role">Retired Professor, Ayodhya</span>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="testimonial-card glass-panel">
+                        <span class="quote-icon">“</span>
+                        <div class="stars">
+                            <i data-lucide="star" style="width: 16px; height: 16px; fill: var(--accent);"></i>
+                            <i data-lucide="star" style="width: 16px; height: 16px; fill: var(--accent);"></i>
+                            <i data-lucide="star" style="width: 16px; height: 16px; fill: var(--accent);"></i>
+                            <i data-lucide="star" style="width: 16px; height: 16px; fill: var(--accent);"></i>
+                            <i data-lucide="star" style="width: 16px; height: 16px; fill: var(--accent);"></i>
+                        </div>
+                        <p class="testimonial-text">I ordered my Oakley sunglasses and contact lenses here. The options
+                            are amazing,
+                            and the staff helped me choose the perfect frames for my round face using their style
+                            finder. Highly
+                            recommended!</p>
+                        <div class="testimonial-author">
+                            <span class="author-name">Anjali Verma</span>
+                            <span class="author-role">Software Engineer</span>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="testimonial-card glass-panel">
+                        <span class="quote-icon">“</span>
+                        <div class="stars">
+                            <i data-lucide="star" style="width: 16px; height: 16px; fill: var(--accent);"></i>
+                            <i data-lucide="star" style="width: 16px; height: 16px; fill: var(--accent);"></i>
+                            <i data-lucide="star" style="width: 16px; height: 16px; fill: var(--accent);"></i>
+                            <i data-lucide="star" style="width: 16px; height: 16px; fill: var(--accent);"></i>
+                            <i data-lucide="star" style="width: 16px; height: 16px; fill: var(--accent);"></i>
+                        </div>
+                        <p class="testimonial-text">Very professional opticians. I got my eyes checked for cataracts and
+                            ordered
+                            ZEISS SmartLife lenses. The clarity is exceptional, and they took care of all sanitization
+                            protocols.</p>
+                        <div class="testimonial-author">
+                            <span class="author-name">Sanjeev Mishra</span>
+                            <span class="author-role">Business Owner, Ayodhya</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== CATALOG VIEW ==================== -->
+    <main id="catalog" class="page-view">
+        <section>
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="serif">Interactive Eyewear Catalog</h2>
+                    <p>Filter by brand, category, style, or color to find your signature look.</p>
+                </div>
+
+                <div class="catalog-layout">
+                    <!-- Sidebar Filters -->
+                    <aside class="filters-sidebar glass-panel">
+                        <!-- Categories Group -->
+                        <div class="filter-group">
+                            <h3 class="filter-title">Category</h3>
+                            <div class="filter-options">
+                                <label class="filter-checkbox-label">
+                                    <input type="checkbox" class="filter-checkbox" data-type="category"
+                                        value="eyeglasses">
+                                    <span>Eyeglasses</span>
+                                </label>
+                                <label class="filter-checkbox-label">
+                                    <input type="checkbox" class="filter-checkbox" data-type="category"
+                                        value="sunglasses">
+                                    <span>Sunglasses</span>
+                                </label>
+                                <label class="filter-checkbox-label">
+                                    <input type="checkbox" class="filter-checkbox" data-type="category"
+                                        value="contact-lenses">
+                                    <span>Contact Lenses</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Gender Group -->
+                        <div class="filter-group">
+                            <h3 class="filter-title">Gender</h3>
+                            <div class="filter-options">
+                                <label class="filter-checkbox-label">
+                                    <input type="checkbox" class="filter-checkbox" data-type="gender" value="men">
+                                    <span>Men</span>
+                                </label>
+                                <label class="filter-checkbox-label">
+                                    <input type="checkbox" class="filter-checkbox" data-type="gender" value="women">
+                                    <span>Women</span>
+                                </label>
+                                <label class="filter-checkbox-label">
+                                    <input type="checkbox" class="filter-checkbox" data-type="gender" value="unisex">
+                                    <span>Unisex</span>
+                                </label>
+                                <label class="filter-checkbox-label">
+                                    <input type="checkbox" class="filter-checkbox" data-type="gender" value="kids">
+                                    <span>Kids</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Brand Group -->
+                        <div class="filter-group">
+                            <h3 class="filter-title">Brand</h3>
+                            <div class="filter-options">
+                                <label class="filter-checkbox-label">
+                                    <input type="checkbox" class="filter-checkbox" data-type="brand" value="Ray-Ban">
+                                    <span>Ray-Ban</span>
+                                </label>
+                                <label class="filter-checkbox-label">
+                                    <input type="checkbox" class="filter-checkbox" data-type="brand" value="Oakley">
+                                    <span>Oakley</span>
+                                </label>
+                                <label class="filter-checkbox-label">
+                                    <input type="checkbox" class="filter-checkbox" data-type="brand" value="Prada">
+                                    <span>Prada</span>
+                                </label>
+                                <label class="filter-checkbox-label">
+                                    <input type="checkbox" class="filter-checkbox" data-type="brand" value="Tom Ford">
+                                    <span>Tom Ford</span>
+                                </label>
+                                <label class="filter-checkbox-label">
+                                    <input type="checkbox" class="filter-checkbox" data-type="brand" value="Silhouette">
+                                    <span>Silhouette</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-secondary" onclick="resetFilters(); filterProducts();"
+                            style="width: 100%; font-size: 0.85rem; margin-top: 10px; padding: 10px;">
+                            Clear All Filters
+                        </button>
+                    </aside>
+
+                    <!-- Main Catalog Content -->
+                    <div class="catalog-main">
+                        <!-- Toolbar -->
+                        <div class="catalog-toolbar">
+                            <div class="search-input-wrapper">
+                                <i data-lucide="search" style="width: 18px; height: 18px;"></i>
+                                <input type="text" id="catalogSearch" placeholder="Search by name, brand, or shape...">
+                            </div>
+                            <div class="sort-select-wrapper">
+                                <label for="catalogSort" style="font-size: 0.9rem; color: var(--text-secondary);">Sort
+                                    By:</label>
+                                <select id="catalogSort">
+                                    <option value="featured">Featured Matches</option>
+                                    <option value="price-low">Price: Low to High</option>
+                                    <option value="price-high">Price: High to Low</option>
+                                    <option value="rating">Top Rated</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Products Grid -->
+                        <div class="products-grid" id="productsGrid">
+                            <!-- Will be loaded dynamically from app.js -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== EYE CLINIC VIEW ==================== -->
+    <main id="clinic" class="page-view">
+        <section>
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="serif">Eye Testing & Vision Services</h2>
+                    <p>Schedule comprehensive medical vision tests and consult with certified optometrists.</p>
+                </div>
+
+                <!-- Lead Optometrist Spotlight Section -->
+                <div class="doctor-spotlight glass-panel" style="margin-bottom: 60px;">
+                    <div class="doctor-flex">
+                        <div class="doctor-image-container">
+                            <img src="dr_dimpal_yadav.png" alt="Dr. Dimpal Yadav" class="doctor-img">
+                            <div class="doctor-experience-badge">
+                                <span class="badge-num">8+</span>
+                                <span class="badge-lbl">Yrs Exp</span>
+                            </div>
+                        </div>
+                        <div class="doctor-details">
+                            <span class="doctor-tagline">Clinical Lead & Specialist</span>
+                            <h3 class="doctor-title-name serif">Dr. Dimpal Yadav</h3>
+                            <span class="doctor-qualification">Senior Optometrist (B.Optom)</span>
+
+                            <p class="doctor-description">
+                                Dr. Dimpal Yadav is our Lead Clinical Optometrist, offering top-tier vision diagnostics.
+                                With an
+                                impressive clinical background spanning <strong>more than 8 years</strong> at premier
+                                eye hospitals in
+                                both <strong>Delhi and Ayodhya</strong>, she brings professional medical-grade vision
+                                care directly to
+                                our store clinic. She specializes in computerized eye testing, pediatric vision care,
+                                custom contact
+                                lens fittings, and diabetic eye screenings.
+                            </p>
+
+                            <div class="doctor-bullet-grid">
+                                <div class="doctor-bullet-item">
+                                    <i data-lucide="building-2"
+                                        style="width: 16px; height: 16px; color: var(--accent);"></i>
+                                    <span>Ex-Senior Consultant, Delhi & Ayodhya Hospitals</span>
+                                </div>
+                                <div class="doctor-bullet-item">
+                                    <i data-lucide="award" style="width: 16px; height: 16px; color: var(--accent);"></i>
+                                    <span>Specialist in Advanced Zeiss Refraction & Toric Fittings</span>
+                                </div>
+                                <div class="doctor-bullet-item">
+                                    <i data-lucide="shield-check"
+                                        style="width: 16px; height: 16px; color: var(--accent);"></i>
+                                    <span>100% Prescription Accuracy Guaranteed</span>
+                                </div>
+                                <div class="doctor-bullet-item">
+                                    <i data-lucide="store" style="width: 16px; height: 16px; color: var(--accent);"></i>
+                                    <span>Available In-Store: Monday - Saturday</span>
+                                </div>
+                            </div>
+
+                            <div class="doctor-actions">
+                                <span class="consult-badge"><i data-lucide="check"
+                                        style="width: 14px; height: 14px;"></i> Consultations
+                                    Available In-Store & Clinic</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clinic-layout">
+                    <!-- Left Columns: Services list -->
+                    <div class="clinic-services">
+                        <h3 class="serif" style="font-size: 1.8rem; margin-bottom: 30px;">Available Diagnostic Exams
+                        </h3>
+                        <div class="clinic-services-grid">
+                            <!-- Service 1 -->
+                            <div class="service-card glass-panel">
+                                <div class="service-icon"><i data-lucide="activity"
+                                        style="width: 24px; height: 24px;"></i></div>
+                                <h4 class="service-title">Computerized Vision Test</h4>
+                                <p class="service-desc">Using advanced autorefractometers to get exact eye power
+                                    metrics, verifying both
+                                    cylindrical and spherical metrics.</p>
+                            </div>
+                            <!-- Service 2 -->
+                            <div class="service-card glass-panel">
+                                <div class="service-icon"><i data-lucide="eye" style="width: 24px; height: 24px;"></i>
+                                </div>
+                                <h4 class="service-title">Contact Lens Consultation</h4>
+                                <p class="service-desc">Corneal curvature topography assessment for specialized soft,
+                                    semi-soft, toric,
+                                    or multifocal contact lens fittings.</p>
+                            </div>
+                            <!-- Service 3 -->
+                            <div class="service-card glass-panel">
+                                <div class="service-icon"><i data-lucide="shield-check"
+                                        style="width: 24px; height: 24px;"></i></div>
+                                <h4 class="service-title">Cataract Diagnostic Screening</h4>
+                                <p class="service-desc">Detailed slit-lamp exams to examine the lens structures and
+                                    report early signs
+                                    of cataract development.</p>
+                            </div>
+                            <!-- Service 4 -->
+                            <div class="service-card glass-panel">
+                                <div class="service-icon"><i data-lucide="sparkles"
+                                        style="width: 24px; height: 24px;"></i></div>
+                                <h4 class="service-title">Dry Eye & Glaucoma Checks</h4>
+                                <p class="service-desc">Assessment of intraocular pressure (IOP) using non-contact
+                                    tonometers to protect
+                                    against Glaucoma risk.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Appointment Booking -->
+                    <div class="appointment-box glass-panel">
+                        <h3 class="appointment-title serif">Schedule Your Consult</h3>
+                        <p class="appointment-subtitle">Fill in the fields below. A store clinical coordinator will
+                            verify and
+                            confirm your slot via SMS/Call.</p>
+
+                        <form class="appointment-form" id="appointmentForm">
+                            <div class="form-group">
+                                <label for="appName">Patient Name *</label>
+                                <input type="text" id="appName" placeholder="Enter full name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="appPhone">Mobile Number *</label>
+                                <input type="tel" id="appPhone" placeholder="Enter 10-digit number" pattern="[0-9]{10}"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="appService">Select Vision Service</label>
+                                <select id="appService">
+                                    <option value="eye-checkup">Eye Checkup by Dr. Dimpal Yadav (Free)</option>
+                                    <option value="lens-fitting">Contact Lens Assessment by Dr. Dimpal Yadav</option>
+                                    <option value="cataract-screening">Cataract/Glaucoma Diagnostic by Dr. Dimpal Yadav
+                                    </option>
+                                    <option value="frame-alignment">Frame Fitting & Pupil Alignment</option>
+                                </select>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="appDate">Date Selection *</label>
+                                    <input type="date" id="appDate" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="appTime">Preferred Slot *</label>
+                                    <select id="appTime" required>
+                                        <option value="">Select slot</option>
+                                        <option value="10:00 AM - 12:00 PM">Morning (10AM - 12PM)</option>
+                                        <option value="12:00 PM - 02:00 PM">Noon (12PM - 2PM)</option>
+                                        <option value="03:00 PM - 05:00 PM">Afternoon (3PM - 5PM)</option>
+                                        <option value="05:00 PM - 07:30 PM">Evening (5PM - 7:30PM)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="appNotes">Additional Symptoms / Notes</label>
+                                <textarea id="appNotes" rows="3"
+                                    placeholder="e.g. blurred distance vision, headache, prescription renewal..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" style="margin-top: 10px;">Book Clinical
+                                Slot</button>
+                        </form>
+
+                        <!-- Success State -->
+                        <div class="booking-success" id="bookingSuccess">
+                            <div class="success-icon"><i data-lucide="check" style="width: 36px; height: 36px;"></i>
+                            </div>
+                            <h3 class="serif" style="font-size: 1.6rem; color: #48bb78;">Slot Booked Successfully</h3>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem;">Your appointment request has
+                                been recorded.
+                                We will contact you shortly to confirm.</p>
+                            <div id="successDetails" class="glass-panel"
+                                style="width: 100%; text-align: left; padding: 20px; font-size: 0.9rem; border-radius: 8px;">
+                                <!-- Detailed via JS -->
+                            </div>
+                            <button class="btn btn-secondary" id="newBookingBtn"
+                                style="padding: 10px 20px; font-size: 0.85rem;">Book
+                                Another Slot</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- My Bookings Dashboard -->
+                <div class="bookings-dashboard-container" id="bookingsDashboardContainer"
+                    style="margin-top: 60px; display: none;">
+                    <div style="border-top: 1px solid var(--border-color); padding-top: 40px; margin-top: 20px;">
+                        <div class="section-header" style="margin-bottom: 30px; text-align: left; max-width: 100%;">
+                            <h3 class="serif" style="font-size: 1.8rem; display: flex; align-items: center; gap: 10px;">
+                                <i data-lucide="calendar" style="color: var(--accent); width: 28px; height: 28px;"></i>
+                                Your Scheduled Appointments
+                            </h3>
+                            <p>These appointments are stored in this browser's local storage. You can manage or cancel
+                                them below.</p>
+                        </div>
+                        <div class="bookings-grid" id="bookingsGrid">
+                            <!-- Dynamically populated from localStorage -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== STYLE FINDER VIEW ==================== -->
+    <main id="stylefinder" class="page-view">
+        <section>
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="serif">Face Shape & Frame Finder</h2>
+                    <p>Find the perfect eyewear frames matching your unique face outline and personal aesthetic.</p>
+                </div>
+
+                <div class="finder-wrapper glass-panel">
+                    <!-- Intro step -->
+                    <div class="finder-intro" id="finderIntro">
+                        <i data-lucide="sparkles" style="width: 60px; height: 60px; color: var(--accent);"></i>
+                        <h3 class="serif" style="font-size: 1.8rem;">How It Works</h3>
+                        <p style="color: var(--text-secondary); max-width: 500px; line-height: 1.6;">Our algorithm maps
+                            face
+                            structures to complementary frame geometry rules (e.g. round faces with rectangular frames
+                            to add
+                            structure). Answer 3 quick visual questions to see your curated recommendation list.</p>
+                        <button class="btn btn-primary" id="startFinderBtn" style="margin-top: 20px;">Start Style
+                            Questionnaire</button>
+                    </div>
+
+                    <!-- Interactive Steps -->
+                    <div class="finder-steps-container" id="finderContainer">
+                        <div class="finder-progress-bar">
+                            <div class="finder-progress" id="finderProgress"></div>
+                        </div>
+
+                        <!-- Step 1: Face Shape -->
+                        <div class="finder-step active" data-question="faceShape">
+                            <h3 class="finder-question">1. Select your approximate face shape:</h3>
+                            <div class="finder-options-grid">
+                                <div class="finder-option-card" data-value="round">
+                                    <div class="finder-option-title">Round Shape</div>
+                                    <div class="finder-option-desc">Equal width and length, soft curved chin line</div>
+                                </div>
+                                <div class="finder-option-card" data-value="square">
+                                    <div class="finder-option-title">Square / Angular</div>
+                                    <div class="finder-option-desc">Strong jawline, matching broad forehead width</div>
+                                </div>
+                                <div class="finder-option-card" data-value="oval">
+                                    <div class="finder-option-title">Oval Shape</div>
+                                    <div class="finder-option-desc">Slightly narrower jaw than forehead, gentle curves
+                                    </div>
+                                </div>
+                                <div class="finder-option-card" data-value="heart">
+                                    <div class="finder-option-title">Heart Shape</div>
+                                    <div class="finder-option-desc">Wide forehead and cheekbones tapering to a pointed
+                                        chin</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Personal Style -->
+                        <div class="finder-step" data-question="style">
+                            <h3 class="finder-question">2. Describe your personal style vibe:</h3>
+                            <div class="finder-options-grid">
+                                <div class="finder-option-card" data-value="classic">
+                                    <div class="finder-option-title">Classic & Professional</div>
+                                    <div class="finder-option-desc">Timeless aesthetics, minimal profiles, clean lines
+                                    </div>
+                                </div>
+                                <div class="finder-option-card" data-value="bold">
+                                    <div class="finder-option-title">Bold & Statement</div>
+                                    <div class="finder-option-desc">Oversized shapes, vibrant tortoises, unique temples
+                                    </div>
+                                </div>
+                                <div class="finder-option-card" data-value="sporty">
+                                    <div class="finder-option-title">Sporty & Active</div>
+                                    <div class="finder-option-desc">High wrap-around protection, rubberized grips,
+                                        performance</div>
+                                </div>
+                                <div class="finder-option-card" data-value="retro">
+                                    <div class="finder-option-title">Retro & Vintage</div>
+                                    <div class="finder-option-desc">Clubmasters, circular frames, warm gold metallic
+                                        trim</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Color Preference -->
+                        <div class="finder-step" data-question="color">
+                            <h3 class="finder-question">3. Select your preferred color palette:</h3>
+                            <div class="finder-options-grid">
+                                <div class="finder-option-card" data-value="neutrals">
+                                    <div class="finder-option-title">Timeless Neutrals</div>
+                                    <div class="finder-option-desc">Glossy black, matte charcoal, crystal clear</div>
+                                </div>
+                                <div class="finder-option-card" data-value="metallics">
+                                    <div class="finder-option-title">Polished Metallics</div>
+                                    <div class="finder-option-desc">Yellow gold, silver, rose gold, gunmetal gray</div>
+                                </div>
+                                <div class="finder-option-card" data-value="warm">
+                                    <div class="finder-option-title">Warm Earth Tones</div>
+                                    <div class="finder-option-desc">Havanas, tortoiseshell, brown, olive green</div>
+                                </div>
+                                <div class="finder-option-card" data-value="pastel">
+                                    <div class="finder-option-title">Translucent Pastels</div>
+                                    <div class="finder-option-desc">Blush pink, champagne, soft blue, grey mist</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Navigation Row -->
+                        <div class="finder-nav-row">
+                            <button class="btn btn-secondary" id="finderPrev"><i data-lucide="arrow-left"
+                                    style="width: 16px; height: 16px; margin-right: 6px;"></i> Back</button>
+                            <button class="btn btn-primary" id="finderNext">Next <i data-lucide="arrow-right"
+                                    style="width: 16px; height: 16px; margin-left: 6px;"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Finder Results State -->
+                    <div class="finder-results" id="finderResults">
+                        <i data-lucide="sparkles"
+                            style="width: 48px; height: 48px; color: var(--accent); margin-bottom: 20px;"></i>
+                        <h3 class="results-heading">Your Frame Recommendations</h3>
+                        <p class="results-sub" id="recommendedShapeText">Recommended Style: Round shapes match perfectly
+                            with
+                            Rectangle or Clubmaster frames.</p>
+
+                        <div class="products-grid" id="finderRecommendations"
+                            style="margin-top: 30px; margin-bottom: 40px;">
+                            <!-- Matches rendered via JS -->
+                        </div>
+
+                        <button class="btn btn-primary" id="restartFinderBtn">Restart Style Quiz</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== OUR STORY (ABOUT) VIEW ==================== -->
+    <main id="about" class="page-view">
+        <!-- Story Hero -->
+        <div class="about-hero">
+            <div class="container">
+                <p>A Legacy of Eye Care</p>
+                <h1 class="serif text-accent">Seetaram Eye Care & Optical</h1>
+            </div>
+        </div>
+
+        <!-- Story Content -->
+        <section>
+            <div class="container">
+                <div class="about-content-row">
+                    <div class="about-text">
+                        <h2 class="serif" style="font-size: 2.2rem; margin-bottom: 20px;">Precision, Quality & Service
+                            Since 2001
+                        </h2>
+                        <p>Seetaram Eye Care & Optical was founded with a singular, powerful mission: to make
+                            world-class optical
+                            services and premium global eyewear accessible to the people of Ayodhya. What started as a
+                            simple,
+                            dedicated clinic has evolved into a premier destination for eye health and designer optics,
+                            mirroring the
+                            legacy and resources of institutions like GKB.</p>
+                        <p>We believe that selecting eyewear should be a sensory, highly personalized experience. Our
+                            flagship
+                            showroom in Ayodhya blends state-of-the-art clinical testing technology with a luxurious
+                            showcase of
+                            international brands, ensuring you never have to compromise on vision correction or personal
+                            style.</p>
+                        <p>From authorized lens integrations (ZEISS SmartLife, Essilor Varilux) to handpicked frames
+                            from Ray-Ban,
+                            Oakley, and Prada, Seetaram Eye Care is committed to providing lifetime adjustments,
+                            absolute prescription
+                            guarantees, and exceptional patient care.</p>
+
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-num">25+</span>
+                                <span class="stat-label">Years of Trust</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-num">50k+</span>
+                                <span class="stat-label">Happy Patients</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-num">100%</span>
+                                <span class="stat-label">Prescription Match</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-visual">
+                        <div class="clinic-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&fit=crop&q=80&w=800"
+                                alt="Consultation desk">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== ONLINE BILLING VIEW ==================== -->
+    <main id="billing" class="page-view">
+        <section>
+            <div class="container">
+                <div class="section-header">
+                    <span
+                        style="color: var(--accent); font-weight:600; letter-spacing: 2px; text-transform: uppercase; font-size: 0.85rem;">Online
+                        Invoice</span>
+                    <h2 class="serif">Optical Billing Portal</h2>
+                    <p>Generate digital bills, view prescription details, calculate final amounts, and print
+                        professional receipts.</p>
+                </div>
+
+                <div class="billing-layout">
+                    <!-- Left Column: Billing Form -->
+                    <div class="billing-box glass-panel">
+                        <h3 class="billing-title serif">Customer & Prescription Details</h3>
+                        <p class="billing-subtitle">Fill in details to generate a computerized invoice.</p>
+
+                        <form id="billingForm" class="billing-form">
+                            <!-- Customer Info -->
+                            <div class="form-row-full">
+                                <div class="form-group">
+                                    <label for="billCustomerName">Customer Name *</label>
+                                    <input type="text" id="billCustomerName" placeholder="Enter customer full name"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="billPhone">Phone Number *</label>
+                                    <input type="tel" id="billPhone" placeholder="Enter 10-digit mobile"
+                                        pattern="[0-9]{10}" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="billDate">Billing Date *</label>
+                                    <input type="date" id="billDate" required>
+                                </div>
+                            </div>
+                            <div class="form-row-full">
+                                <div class="form-group">
+                                    <label for="billAddress">Billing Address *</label>
+                                    <textarea id="billAddress" rows="2" placeholder="Enter street address, city, state"
+                                        required></textarea>
+                                </div>
+                            </div>
+
+                            <!-- Prescription Info -->
+                            <h4 class="billing-section-subhead serif">Prescription Parameters</h4>
+
+                            <div class="prescription-grid">
+                                <div class="prescription-header">Eye</div>
+                                <div class="prescription-header">Spherical (SPH)</div>
+                                <div class="prescription-header">Cylindrical (CYL)</div>
+                                <div class="prescription-header">Axis</div>
+                                <div class="prescription-header">Addition (ADD)</div>
+
+                                <!-- Right Eye (OD) -->
+                                <div class="prescription-eye-label">Right (OD)</div>
+                                <input type="text" id="billSphOD" placeholder="Plano / -0.50" value="Plano">
+                                <input type="text" id="billCylOD" placeholder="e.g. -0.25">
+                                <input type="text" id="billAxisOD" placeholder="e.g. 90">
+                                <input type="text" id="billAddOD" placeholder="e.g. +1.50">
+
+                                <!-- Left Eye (OS) -->
+                                <div class="prescription-eye-label">Left (OS)</div>
+                                <input type="text" id="billSphOS" placeholder="Plano / -0.50" value="Plano">
+                                <input type="text" id="billCylOS" placeholder="e.g. -0.25">
+                                <input type="text" id="billAxisOS" placeholder="e.g. 180">
+                                <input type="text" id="billAddOS" placeholder="e.g. +1.50">
+                            </div>
+
+                            <div class="form-row" style="margin-top: 15px;">
+                                <div class="form-group">
+                                    <label for="billPD">Pupillary Distance (PD mm)</label>
+                                    <input type="text" id="billPD" placeholder="e.g. 64">
+                                </div>
+                                <div class="form-group">
+                                    <label for="billLensType">Lens Type / Option</label>
+                                    <select id="billLensType">
+                                        <option value="single-vision">Single Vision (Zeiss/Essilor)</option>
+                                        <option value="bifocal">Kryptok Bifocal</option>
+                                        <option value="progressive">Zeiss Progressive SmartLife</option>
+                                        <option value="blue-cut">Blue Cut Antiglare</option>
+                                        <option value="polarized-sunglasses">Polarized Sunglasses Lens</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Costing and Payment -->
+                            <h4 class="billing-section-subhead serif">Amount & Payment Options</h4>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="billItemPrice">Frames/Product Price (₹) *</label>
+                                    <input type="number" id="billItemPrice" placeholder="Enter amount" min="0" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="billLensPrice">Lenses Price (₹)</label>
+                                    <input type="number" id="billLensPrice" placeholder="0" min="0" value="0">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="billDiscount">Discount (₹)</label>
+                                    <input type="number" id="billDiscount" placeholder="0" min="0" value="0">
+                                </div>
+                                <div class="form-group">
+                                    <label for="billPaymentMethod">Payment Method</label>
+                                    <select id="billPaymentMethod">
+                                        <option value="UPI">UPI (GPay / PhonePe / Paytm)</option>
+                                        <option value="Credit/Debit Card">Credit/Debit Card</option>
+                                        <option value="NetBanking">Net Banking</option>
+                                        <option value="Cash">Cash payment</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" style="margin-top: 15px; width: 100%;">
+                                Generate Computerized Bill
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Right Column: Live Invoice Preview -->
+                    <div class="invoice-box-wrapper">
+                        <div id="invoiceSheet" class="invoice-sheet glass-panel">
+                            <div class="invoice-header">
+                                <div class="invoice-brand-col">
+                                    <div class="invoice-logo">S</div>
+                                    <div class="invoice-company-details">
+                                        <h3>SEETARAM EYE CARE</h3>
+                                        <p>Near Naya Ghat, Ayodhya, UP</p>
+                                        <p>Phone: +91-8115442777</p>
+                                    </div>
+                                </div>
+                                <div class="invoice-number-col">
+                                    <h2>INVOICE</h2>
+                                    <p><strong>Bill No:</strong> <span id="invNumber">--</span></p>
+                                    <p><strong>Date:</strong> <span id="invDate">--</span></p>
+                                </div>
+                            </div>
+
+                            <div class="invoice-bill-to">
+                                <div class="bill-to-col">
+                                    <h4>Billed To:</h4>
+                                    <p><strong>Name:</strong> <span id="invCustomerName">--</span></p>
+                                    <p><strong>Phone:</strong> <span id="invPhone">--</span></p>
+                                    <p><strong>Address:</strong> <span id="invAddress">--</span></p>
+                                </div>
+                            </div>
+
+                            <div class="invoice-prescription">
+                                <h4>Ophthalmic Lens Prescription</h4>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Eye</th>
+                                            <th>SPH</th>
+                                            <th>CYL</th>
+                                            <th>Axis</th>
+                                            <th>ADD</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Right (OD)</td>
+                                            <td id="invSphOD">--</td>
+                                            <td id="invCylOD">--</td>
+                                            <td id="invAxisOD">--</td>
+                                            <td id="invAddOD">--</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Left (OS)</td>
+                                            <td id="invSphOS">--</td>
+                                            <td id="invCylOS">--</td>
+                                            <td id="invAxisOS">--</td>
+                                            <td id="invAddOS">--</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p style="font-size: 0.8rem; margin-top: 5px; color: var(--text-secondary);">
+                                    <strong>PD (mm):</strong> <span id="invPD">--</span> |
+                                    <strong>Lens Type:</strong> <span id="invLensType">--</span>
+                                </p>
+                            </div>
+
+                            <div class="invoice-items">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Description</th>
+                                            <th style="text-align: right;">Amount (₹)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Designer Frame / Selected Product</td>
+                                            <td id="invFrameCost" style="text-align: right;">₹0.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Prescription Ophthalmic Lenses</td>
+                                            <td id="invLensCost" style="text-align: right;">₹0.00</td>
+                                        </tr>
+                                        <tr id="invDiscountRow" style="color: #fc8181; font-weight: 500;">
+                                            <td>Discount Applied</td>
+                                            <td id="invDiscountCost" style="text-align: right;">-₹0.00</td>
+                                        </tr>
+                                        <tr class="total-row">
+                                            <td>Grand Total (Incl. GST)</td>
+                                            <td id="invTotalCost" style="text-align: right;">₹0.00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="invoice-footer">
+                                <div class="payment-info">
+                                    <p><strong>Payment Status:</strong> Paid (UPI / Card / Cash)</p>
+                                    <p><strong>Method:</strong> <span id="invMethod">--</span></p>
+                                </div>
+                                <div class="sign-info">
+                                    <p
+                                        style="border-bottom: 1px solid var(--border-color); width: 120px; margin-bottom: 5px;">
+                                    </p>
+                                    <p>Authorized Signatory</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="invoice-actions" style="margin-top: 20px; display: flex; gap: 16px;">
+                            <button class="btn btn-primary" id="printInvoiceBtn" style="flex: 1;"
+                                onclick="printInvoice()">
+                                <i data-lucide="printer" style="width: 18px; height: 18px; margin-right: 8px;"></i>
+                                Print / Save PDF
+                            </button>
+                            <button class="btn btn-secondary" id="newInvoiceBtn" style="flex: 1;"
+                                onclick="resetBillingForm()">
+                                <i data-lucide="plus" style="width: 18px; height: 18px; margin-right: 8px;"></i> New
+                                Invoice
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Billing History List -->
+                <div class="billing-history-container" id="billingHistoryContainer" style="margin-top: 60px;">
+                    <div style="border-top: 1px solid var(--border-color); padding-top: 40px;">
+                        <div class="section-header" style="margin-bottom: 30px; text-align: left; max-width: 100%;">
+                            <h3 class="serif" style="font-size: 1.8rem; display: flex; align-items: center; gap: 10px;">
+                                <i data-lucide="history" style="color: var(--accent); width: 28px; height: 28px;"></i>
+                                Billing Records History
+                            </h3>
+                            <p>View previous sales invoices generated by the system. Data is stored locally in the
+                                browser.</p>
+                        </div>
+
+                        <div class="history-table-wrapper glass-panel">
+                            <table class="history-table">
+                                <thead>
+                                    <tr>
+                                        <th>Invoice No</th>
+                                        <th>Date</th>
+                                        <th>Customer Name</th>
+                                        <th>Phone</th>
+                                        <th>Lens Type</th>
+                                        <th>Total Amount</th>
+                                        <th>Payment</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="billingHistoryGrid">
+                                    <!-- Invoices rendered by app.js -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== PRODUCT DETAILS ZOOM MODAL ==================== -->
+    <div class="modal-overlay" id="productModal">
+        <!-- Modal content populated dynamically by app.js -->
+    </div>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Col 1: About logo -->
+                <div class="footer-col">
+                    <a href="#" class="logo">
+                        <div class="logo-icon" style="color: #000;">S</div>
+                        <div class="logo-text">
+                            <span class="logo-title" style="color: var(--text-primary);">SEETARAM</span>
+                            <span class="logo-sub">Eye Care & Optical</span>
+                        </div>
+                    </a>
+                    <p class="footer-about-text">Ayodhya's premium destination for computerized vision exams and global
+                        designer
+                        eyewear. Authorized partner of ZEISS, Essilor, Ray-Ban, and Oakley.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="social-icon" aria-label="Facebook"><i data-lucide="facebook"
+                                style="width: 18px; height: 18px;"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i data-lucide="instagram"
+                                style="width: 18px; height: 18px;"></i></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><i data-lucide="twitter"
+                                style="width: 18px; height: 18px;"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div class="footer-col">
+                    <h3 class="footer-heading">Shop Collections</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"
+                                onclick="const link = document.querySelector('.nav-link[data-view=\'catalog\']'); link.setAttribute('data-category', 'eyeglasses'); link.click();">Eyeglasses</a>
+                        </li>
+                        <li><a href="#"
+                                onclick="const link = document.querySelector('.nav-link[data-view=\'catalog\']'); link.setAttribute('data-category', 'sunglasses'); link.click();">Sunglasses</a>
+                        </li>
+                        <li><a href="#"
+                                onclick="const link = document.querySelector('.nav-link[data-view=\'catalog\']'); link.setAttribute('data-category', 'contact-lenses'); link.click();">Contact
+                                Lenses</a></li>
+                        <li><a href="#"
+                                onclick="document.querySelector('.nav-link[data-view=\'stylefinder\']').click()">Find
+                                Your
+                                Face Frame</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Legal/Support -->
+                <div class="footer-col">
+                    <h3 class="footer-heading">Eye Care Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" onclick="document.querySelector('.nav-link[data-view=\'clinic\']').click()">Free
+                                Vision
+                                Checkup</a></li>
+                        <li><a href="#"
+                                onclick="document.querySelector('.nav-link[data-view=\'clinic\']').click()">Contact Lens
+                                Clinic</a></li>
+                        <li><a href="#"
+                                onclick="document.querySelector('.nav-link[data-view=\'clinic\']').click()">Cataract
+                                Diagnostic</a></li>
+                        <li><a href="#" onclick="document.querySelector('.nav-link[data-view=\'about\']').click()">Our
+                                Legacy in
+                                Ayodhya</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact details -->
+                <div class="footer-col">
+                    <h3 class="footer-heading">Seetaram Clinic</h3>
+                    <div class="footer-contact-item">
+                        <i data-lucide="map-pin" style="width: 20px; height: 20px;"></i>
+                        <span>Main Market Road, Near Naya Ghat, Ayodhya, Uttar Pradesh - 224123</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i data-lucide="phone" style="width: 20px; height: 20px;"></i>
+                        <span>+91-9450000000<br>+91-5278-200000</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i data-lucide="mail" style="width: 20px; height: 20px;"></i>
+                        <span>care@seetaramoptical.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p class="copyright">© 2026 Seetaram Eye Care & Optical. All Rights Reserved. Designed to mimic premium
+                    GKB
+                    resource standard.</p>
+                <div class="footer-payment-icons" title="Secure Payment Options Accepted">
+                    <i data-lucide="credit-card" style="width: 24px; height: 24px; margin-right: 8px;"></i>
+                    <span
+                        style="font-size: 0.8rem; font-weight: 500; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 1px;">UPI
+                        / Cards / NetBanking Secured</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Load script files -->
+    <script src="products.js"></script>
+    <script src="app.js"></script>
+
+    <script>
+        // Initialize Lucide icons on start
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
